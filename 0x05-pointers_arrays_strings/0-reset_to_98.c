@@ -1,7 +1,9 @@
 #include "main.h"
-/*
- * Description: an piece of code to test conception in C just for assesment
- * reset_to_98 - a function to reset the value of a pointer to 98
+/**
+ * reset_to_98 - set the integer to 98
+ * @n: a pointer the integer we want to set to 98
+ *
+ * Return: nothing
  **/
 void reset_to_98(int *n)
 {
