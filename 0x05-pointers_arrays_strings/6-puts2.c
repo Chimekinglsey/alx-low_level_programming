@@ -11,6 +11,13 @@ int i;
 
 for (i = 0; str[i] != '\0'; i++)
 {
+	while ((i % 2) == 2)
+	{
 	_putchar(str[i]);
+	while ((i % 2) != 1)
+	{
+		_putchar(str[i]);
+	}
+	}
 }
 }
