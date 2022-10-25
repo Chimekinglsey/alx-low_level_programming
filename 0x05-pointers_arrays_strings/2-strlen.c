@@ -7,8 +7,9 @@
  **/
 int _strlen(char *s)
 {
-	*s = "I'm doing Hard things and it feels good";
-	length = strlen(*s);
+	s = "I'm doing Hard things and it feels good";
+	int length;
+	length = strlen(s);
 	_putchar("%d\n", length);
 	return (0);
 }
