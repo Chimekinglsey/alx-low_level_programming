@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
  * main - Entry point
  * Description: Printing to standaard error
@@ -7,7 +6,8 @@
  **/
 int main(void)
 {
-fprintf("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+fprintf(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19");
+fprintf(stderr, "\n");
 
 	return (1);
 }
