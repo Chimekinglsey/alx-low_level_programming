@@ -7,6 +7,8 @@
  **/
 void _puts(char *str)
 {
-str = "I do not fear computers. I fear the lack of them - Isaac Asimov\n";
-_putchar(str);
+	char str1;
+
+	str1 = *str;
+	_putchar(str1);
 }
