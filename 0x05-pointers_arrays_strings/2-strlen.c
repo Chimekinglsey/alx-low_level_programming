@@ -7,6 +7,11 @@
  **/
 int _strlen(char *s)
 {
-	_putchar(strlen(s));
-	return (0);
+	int i;
+
+	for (i = 0; s[i] != EOF; i++)
+	{
+	_putchar(s[i]);
+	}
+	return (i);
 }
