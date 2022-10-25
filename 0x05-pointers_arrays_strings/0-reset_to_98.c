@@ -1,6 +1,6 @@
 #include "main.h"
-void reset(int *a)
+void reset_to_98(int *n);
 {
-*a = 98;
- _putchar("value of 'a:' %p\n", *a);
+*n = 98;
+ _putchar("value of 'a:' %p\n", *n);
 }
