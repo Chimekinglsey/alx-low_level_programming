@@ -30,6 +30,7 @@ int q;
 					putchar(' ');
 			}
 		}
+		}
 	}
 putchar('\n');
 return (0);
