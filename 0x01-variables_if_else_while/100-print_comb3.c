@@ -6,23 +6,26 @@
  */
 int main(void)
 {
-int A;
-int B;
+int d;
 
-for (A = 0; A < 100; A++)
-{
-	B = A;
-	while ((A >= 99) && (A != B))
-	putchar('0' + A + '0' + A);
+int p;
 
-	if ((A >= 0) && (A < 9))
+for (d = '0'; d < '9'; d++)
 	{
-	putchar(',');
+		for (p = d + 1; p <= '9'; p++)
+		{
+			if (p != d)
+			{
+				putchar(d);
+				putchar(p);
 
-	putchar(' ');
+					if (d == '8' && p == '9')
+						continue;
+					putchar(',');
+					putchar(' ');
+			}
+		}
 	}
-}
-
-	putchar('\n');
+putchar('\n');
 return (0);
 }
