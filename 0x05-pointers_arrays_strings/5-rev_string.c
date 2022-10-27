@@ -6,13 +6,21 @@
  **/
 void rev_string(char *s)
 {
-	int i;
+	int i = 0;
 
-	int len;
+	int len = 0;
 
-	len = strlen(s);
-	for (i = len - 1; i >= 0; i--)
+	char aux;
+
+	while (s[len] != '\0')
 	{
-	_putchar(len);
+		len++;
+	}
+
+	while (i < len)
+	{
+		aux = s[i];
+		s[i++] = s[len];
+		s[len] = aux;
 	}
 }
