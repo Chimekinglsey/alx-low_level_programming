@@ -12,14 +12,11 @@ for (A = 0; A < 10; A++)
 {
 	putchar('0' + A);
 
-	if ((A >= 0) && (A <= 9))
-	{
-	while (A < 9)
+	if ((A >= 0) && (A < 9))
 	{
 	putchar(',');
 
 	putchar(' ');
-	}
 	}
 }
 
