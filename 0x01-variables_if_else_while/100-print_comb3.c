@@ -13,7 +13,7 @@ for (A = 0; A < 100; A++)
 {
 	B = A;
 	while ((A >= 99) && (A != B))
-	putchar('0' + A + A);
+	putchar('0' + A + '0' + A);
 
 	if ((A >= 0) && (A < 9))
 	{
