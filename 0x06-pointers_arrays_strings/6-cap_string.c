@@ -38,13 +38,13 @@ int i = 0;
 int check_seperators(char c)
 
 {
-int i = 0;
+int i;
 
 char seperators[13] = { ' ', '\t', '\n', ',', ';', '.', '!', '?', '"',};
 char sep2[] = {'(', ')', '{', '}' };
 strcat(seperators, sep2);
 
-	for (; i < 13; i++)
+	for (i = 0; i < 13; i++)
 	{
 		if (c == seperators[i])
 		{
