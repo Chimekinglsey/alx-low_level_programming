@@ -14,9 +14,8 @@ for (A = 0; A < 10; A++)
 
 	if ((A >= 0) && (A <= 9))
 	{
-	int B = ',';
 
-	putchar('0' + B);
+	putchar(',');
 
 	putchar(' ');
 	}
