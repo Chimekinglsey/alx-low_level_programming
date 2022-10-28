@@ -12,10 +12,10 @@
  *      * Return: largest number
  *
  */
-int largest_number(int a, int b, int c)
+double largest_number(double a, double b, double c)
 
 {
-	int largest;
+	double largest;
 
 	if ((a >= b) && (b >= c))
 	{
