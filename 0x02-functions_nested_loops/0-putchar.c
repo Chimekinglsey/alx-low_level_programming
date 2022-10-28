@@ -6,7 +6,7 @@
  **/
 int main(void)
 {
-char put[8] = "_putchar";
+char put[8] = "_putchar\n";
 
 int i;
 
@@ -14,6 +14,5 @@ for (i = 0; i < 9; i++)
 {
 	_putchar(put[i]);
 }
-_putchar('\n');
 return (0);
 }
