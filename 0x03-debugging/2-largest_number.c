@@ -17,7 +17,12 @@ double largest_number(double a, double b, double c)
 {
 	double largest;
 
-	if ((a >= b) && (b >= c))
+	if ( a == b == c)
+	{
+		largest = a;
+	}
+
+	else if ((a >= b) && (b >= c))
 	{
 		largest = a;
 	}
@@ -25,13 +30,11 @@ double largest_number(double a, double b, double c)
 	{
 		largest = b;
 	}
-	else if (a == b && b == c)
-	{
-		largest = a;
-	}
 	else
 	{
 		largest = c;
 	}
 	return (largest);
+
+	}
 }
