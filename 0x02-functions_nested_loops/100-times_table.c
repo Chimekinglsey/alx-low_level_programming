@@ -6,7 +6,6 @@
  *   * Return: A pointer to the resulting string
  *
  **/
-int main(void)
 
 {
 	print_times_table(3);
