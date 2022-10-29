@@ -12,5 +12,5 @@ int upper;
 	{
 		_putchar(upper);
 	}
-_putchar('\n');
+	_putchar('0' + '\n');
 }
