@@ -11,10 +11,10 @@
 int _isdigit(int c)
 {
 int state = 0;
-int digit;
-	for (digit = 0; digit <= 9; digit++)
+char digit;
+	for (digit = '0'; digit <= '9'; digit++)
 	{
-		while (c == digit)
+		if (c == digit)
 		{
 		state = 1;
 		}
