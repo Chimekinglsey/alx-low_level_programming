@@ -7,8 +7,8 @@
  **/
 void print_numbers(void)
 {
-int upper;
-	for (upper = 0; upper <= 9; upper++)
+char upper;
+	for (upper = '0'; upper <= '9'; upper++)
 	{
 		_putchar(upper);
 	}
