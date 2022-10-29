@@ -1,7 +1,7 @@
 
 #include "main.h"
 /**
- *  * int _isdigit - checks wether input is digit
+ * _isdigit - checks wether input is digit
  *
  *  @c: The intake string
  *
@@ -14,7 +14,7 @@ int state = 0;
 int digit;
 	for (digit = 0; digit <= 9; digit++)
 	{
-		if (c == digit)
+		while (c == digit)
 		{
 		state = 1;
 		}
