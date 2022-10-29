@@ -10,7 +10,7 @@
 int _isupper(int c)
 {
 int state;
-char upper[27] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '\0'};
+char upper[27] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '\0'};
 
 	if (c == upper[0] || c == upper[1] || c == upper[2] || c == upper[3] || c == upper[4] || c == upper[5] || c == upper[6] || c == upper[7] || c == upper[8] || c == upper[9] || c == upper[10] || c == upper[11] || c == upper[12] || c == upper[13] || c == upper[14] || c == upper[15] || c == upper[16] || c == upper[17] || c == upper[18] || c == upper[19] || c == upper[20] || c == upper[21] || c == upper[22] || c == upper[23] || c == upper[25] || c == upper[25])
 	{
