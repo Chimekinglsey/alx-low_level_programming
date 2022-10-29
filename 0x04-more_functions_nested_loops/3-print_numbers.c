@@ -12,5 +12,5 @@ char upper;
 	{
 		_putchar(upper);
 	}
-	_putchar('0' + '\n');
+	_putchar('\n');
 }
