@@ -13,7 +13,7 @@ for (counter = 0; counter <= 10; counter++)
 {
 	for (num = 0; num <= 14; num++)
 	{
-		_putchar(num);
+		_putchar('0' + num);
 	}
 _putchar('\n');
 }
