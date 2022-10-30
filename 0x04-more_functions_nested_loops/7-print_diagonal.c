@@ -15,6 +15,6 @@ int i;
 			_putchar('\n');
 		}
 		_putchar('\\');
-	}
 	_putchar('\n');
+}
 }
