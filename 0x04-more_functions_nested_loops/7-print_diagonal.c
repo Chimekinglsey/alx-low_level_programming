@@ -14,7 +14,7 @@ int i;
 		{
 			_putchar('\n');
 		}
-		while (n > 0)
+		else if (n > 0)
 		{
 		_putchar('\\');
 		_putchar('\n');
