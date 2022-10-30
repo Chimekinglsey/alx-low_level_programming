@@ -14,10 +14,13 @@ int i;
 		{
 			_putchar('\n');
 		}
-
+		while (n > 0)
+		{
 		_putchar('\\');
-		
-	_putchar('\n');
+		_putchar('\n');
+		}
 	}
+
+	//_putchar('\n');
 }
 
