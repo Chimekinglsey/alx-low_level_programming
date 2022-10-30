@@ -1,31 +1,34 @@
-
-
 #include "main.h"
 /**
- *  * print_square - prints a given number of line;
+ *  * print_triangle - prints a given number of line;
  *  @size: square to print
  *   * Return: image
  *
  **/
-void print_square(int size)
+void print_triangle(int size)
 {
-
 int i;
 int j;
+int n;
+n = size - 1;
 
-	if (size <= 0)
+	if (size > 0)
 	{
-		_putchar('\n');
+		for (; i < size; i++)
+		{
+			for (j = 0; j < size; j++)
+			{
+				if (j < n)
+					_putchar(' ');
+				else
+					_putchar('#');
+			}
+			n--;
+			_putchar('\n');
+		}
 	}
 	else
-	{
-	for (j = 0; j < size; j++)
 		{
-		for (i = 0; i < size; i++)
-		{
-			_putchar('#');
+			_putchar('\n');
 		}
-		_putchar('\n');
-		}
-	}
 }
