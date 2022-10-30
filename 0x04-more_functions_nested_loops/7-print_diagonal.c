@@ -21,6 +21,6 @@ int i;
 		}
 	}
 
-	//_putchar('\n');
+	/*_putchar('\n');*/
 }
 
