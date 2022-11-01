@@ -25,7 +25,9 @@ int j;
 			break;
 		}
 		else
-			continue;
+		{
+		continue;
+		}
 		}
 	}
 return (string_length);
