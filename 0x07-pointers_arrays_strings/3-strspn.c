@@ -10,7 +10,7 @@
  **/
 unsigned int _strspn(char *s, char *accept)
 {
-int string_length;
+int string_length = 0;
 int strlen_s = strlen(s);
 int i;
 int j;
@@ -21,7 +21,6 @@ int j;
 		{
 		if (accept[j] == s[i])
 		{
-			string_length = 0;
 			string_length++;
 			break;
 		}
