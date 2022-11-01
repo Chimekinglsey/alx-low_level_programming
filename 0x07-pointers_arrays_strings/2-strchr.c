@@ -9,11 +9,11 @@
  **/
 char *_strchr(char *s, char c)
 {
-	char caps[27] = {"ABCDEFGHIJKLMNOPQRSTUVWXYZ"};
-	char small[37] = {"abcdefghijklmnopqrstuvwxyz0123456789"};
+	char caps[32] = {"ABCDEFGHIJKLMNOPQRSTUVWXYZ01234"};
+	char small[32] = {"abcdefghijklmnopqrstuvwxyz56789"};
 	int i;
 
-	for (i = 0; i < 37; i++)
+	for (i = 0; i < 32; i++)
 	{
 		if ((c != caps[i]) || (c != small[i]))
 		{
