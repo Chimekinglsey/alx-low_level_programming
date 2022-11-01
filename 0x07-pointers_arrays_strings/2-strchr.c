@@ -10,10 +10,10 @@
 char *_strchr(char *s, char c)
 {
 	char caps[27] = {"ABCDEFGHIJKLMNOPQRSTUVWXYZ"};
-	char small[27] = {"abcdefghijklmnopqrstuvwxyz"};
+	char small[37] = {"abcdefghijklmnopqrstuvwxyz0123456789"};
 	int i;
 
-	for (i = 0; i < 27; i++)
+	for (i = 0; i < 37; i++)
 	{
 		if ((c != caps[i]) || (c != small[i]))
 		{
@@ -26,7 +26,7 @@ char *_strchr(char *s, char c)
 		else if (c == small[i])
 		{
 			s = &small[i];
-		}	
+		}
 	}
 return (s);
 }
