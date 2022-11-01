@@ -26,8 +26,7 @@ char *_strchr(char *s, char c)
 		else if (c == small[i])
 		{
 			s = &small[i];
-		}
-	
+		}	
 	}
 return (s);
 }
