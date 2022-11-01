@@ -14,11 +14,12 @@ int string_length = 0;
 int strlen_s = strlen(s);
 int i;
 int j;
+int lenAccept = strlen(accept);
 char *ptr = NULL;
 
 	for (i = 0; i < strlen_s; i++)
 	{
-		for (j = 0; j < 1; j++)
+		for (j = 0; j < lenAccept; j++)
 		{
 		if (accept[j] == s[i])
 		{
