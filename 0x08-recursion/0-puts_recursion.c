@@ -9,10 +9,15 @@
  **/
 void _puts_recursion(char *s)
 {
-	char *c;
+	{
+	char str;
 
-	c = s;
-_putchar(*c);
+	str = *s;
+
+	_putchar(str);
+
+	}
+
 _putchar('\n');
 }
 
