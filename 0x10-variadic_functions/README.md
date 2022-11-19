@@ -1,1 +1,1 @@
- This is our variadic function task
+This is our variadic function task
