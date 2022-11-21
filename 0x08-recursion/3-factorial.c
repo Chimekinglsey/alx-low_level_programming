@@ -1,7 +1,6 @@
 #include "main.h"
 /*
- * factorial - calculates the factorial of a number
- *
+ * factorial - a function that returns the factorial of a number.
  * @n: value to evaluate
  *
  * Return: Factorial
