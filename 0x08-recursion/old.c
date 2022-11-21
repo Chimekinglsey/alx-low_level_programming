@@ -7,13 +7,27 @@
  *   * Return: nothing
  *
  **/
+char rec(char *s);
 void _puts_recursion(char *s)
 {
 	{
-	if ((*s >= 'A') && (*s != '\0'))
-	_putchar(*s);
-	_puts_recursion(s + 1);
+	char str;
+
+	str = *s;
+	if (str != '\0')
+	{
+		rec(s);
 	}
 
 _putchar('\n');
 }
+
+void rec(char *s)
+	{
+	char res;
+
+	res = rec(s);
+	_putchar(res);
+	
+	}
+
