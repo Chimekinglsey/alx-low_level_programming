@@ -29,7 +29,7 @@ int is_prime_number(int n)
 int prime(int checker, int num)
 
 {
-	if (num % checker != 0)
+	if (num % checker == 0)
 		return (0);
 	if ((num % checker == 0) && num == checker)
 	return (1);
