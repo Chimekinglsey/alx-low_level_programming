@@ -30,5 +30,5 @@ int sum_them_all(const unsigned int n, ...)
 			_putchar('0' + total);
 		}
 	va_end(add);
-	return (0);
+	return (1);
 }
