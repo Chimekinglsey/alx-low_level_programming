@@ -27,8 +27,8 @@ int sum_them_all(const unsigned int n, ...)
 				total += count;
 				i++;
 			}
+			_putchar('0' + total);
 		}
 	va_end(add);
-	_putchar('\n');
-	return (total);
+	return (0);
 }
