@@ -1,5 +1,5 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include "main.h"
+
 /**
 * main - This is a function that prints its name even after a rename.
 *
@@ -12,13 +12,14 @@
 */
 int main(int argc, char *argv[])
 {
-/* int sum = 0; */
 int count;
+int *counter;
+counter = (int *) malloc (argc * (sizeof(int *)));
 
-	for (count = 0; count < argc; count++)
+	for (count = 0; count <= argc; count++)
 		{
-		printf("%s\n", argv[count]);
-		/*sum += atoi (argv[count]);*/
+		counter = &count;
+		printf("%s\n", argv[*counter]);
 		}
 return (0);
 }
