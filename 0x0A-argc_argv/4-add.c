@@ -19,7 +19,7 @@ if (argc == 1)
 
 		if (argc > 2)
 		{
-			for (count = 3; count == argc; count++)
+			for (count = 2; count == argc; count++)
 			{
 				if (isdigit(atoi(argv[count])))
 					{
