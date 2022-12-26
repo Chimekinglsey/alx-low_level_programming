@@ -15,6 +15,12 @@ int main(int argc, char *argv[])
 int amount, change = 0;
 amount = atoi(argv[1]);
 
+
+if (argc < 2)
+	{
+	printf("Error\n");
+	return (1);
+	}
 if (argc != 2)
 	{
 	printf("Error\n");
