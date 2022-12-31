@@ -13,7 +13,7 @@ char *s;
 int len;
 len = strlen(str);
 
-s = (char *)malloc(sizeof(char));
+s = (char *)malloc(len * sizeof(char));
 
 if (str == NULL)
 return (NULL);
