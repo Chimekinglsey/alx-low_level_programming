@@ -1,14 +1,11 @@
 #include "main.h"
-
-/*
-* *create_array - creates an array of characters defined by main
-*
-* @size: input size of characters.
-*
-* @c: the characters to store in the array.
-*
-* Return - a character pointer.
-*/
+/**
+ * create_array - A function that creates an array of chars,
+ * and initializes it with a specific char.
+ * @size: The size of the array
+ * @c: A character to initialized the array
+ * Return: Apointer to the array or NULL if it fails
+ */
 
 char *create_array(unsigned int size, char c)
 {
@@ -27,9 +24,5 @@ for (i = 0; i < size; i++)
 	{
 	mychar[i] = c;
 	}
-for (i = 0; i < size; i++)
-	{
-	_putchar(mychar[i]);
-	}
-return (0);
+return (mychar);
 }
