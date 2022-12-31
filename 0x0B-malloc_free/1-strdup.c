@@ -13,11 +13,12 @@ char *s;
 int len;
 len = strlen(str);
 
-s = (char *)malloc(len * sizeof(char));
+s = (char *)malloc(len *sizeof(char));
 
 if (str == NULL)
+{
 return (NULL);
-
+}
 if (s == NULL || s == 0)
 return (NULL);
 
