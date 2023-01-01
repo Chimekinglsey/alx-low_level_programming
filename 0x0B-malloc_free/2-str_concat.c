@@ -30,7 +30,6 @@ char *str_concat(char *s1, char *s2)
 	i = len3;
 	while (i >= len1 - 1)
 	{
-		if (i <= len3)
 		sum[i] = *(s2 + i);
 		i++;
 	}
