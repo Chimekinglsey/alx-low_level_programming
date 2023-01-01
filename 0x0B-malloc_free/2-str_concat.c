@@ -24,13 +24,14 @@ char *str_concat(char *s1, char *s2)
 	sum = (char *) malloc(len3 * sizeof(char));
 	for (i = 0; i < len1; i++)
 	{
-	sum[i] = *s1;
+	sum[i] = *(s1 + i);
+
 	}
 	for (; i >= len1 - 1; i++)
 	{
 		if (i > (len1 - 1) && i <= len2)
 		{
-		sum[i] = *s2;
+		sum[i] = *(s2 + i);
 		}
 	}
 	return (sum);
