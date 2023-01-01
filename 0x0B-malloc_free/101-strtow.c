@@ -18,6 +18,7 @@ char **strtow(char *str)
 		if ((str[i] != ' ' || *str != '\t') &&
 				((str[i + 1] == ' ' || str[i + 1] == '\t') || str[i + 1] == '\n'))
 			count++;
+			_putchar('\0');
 	}
 	if (count == 0)
 		return (NULL);
