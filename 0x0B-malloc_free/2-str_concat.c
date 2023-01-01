@@ -29,10 +29,9 @@ char *str_concat(char *s1, char *s2)
 	}
 	for (; i >= len1 - 1; i++)
 	{
-		for (; (i > (len1 - 1) && i <= len2); i++)
-		{
+		if (i <= len2)
 		sum[i] = *(s2 + i);
-		}
+		
 	}
 	return (sum);
 }
