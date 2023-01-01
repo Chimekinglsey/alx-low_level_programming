@@ -9,7 +9,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	char *sum;
+	char *sum, *joined;
 	int i, len1, len2, len3;
 
 	len1 = strlen(s1);
@@ -22,16 +22,22 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 
 	sum = (char *) malloc(len3 * sizeof(char));
-	for (i = 0; i < len1; i++)
-	{
-	sum[i] = *(s1 + i);
+	joined = sum;
+	if (sum == NULL)
+	return (NULL);
 
-	}
-	i = len3;
-	while (i >= len1 - 1)
+	for (i = 0; i < (len1 + len2); i++)
 	{
-		sum[i] = *(s2 + i);
-		i++;
+		if (i < len1)
+		{
+			sum[i] = *(s1 + i);
+		}
+		else
+		{
+			sum[i] = *s2;
+			s2++;
+		}
 	}
-	return (sum);
+	sum[i] = '\0';
+	return (joined);
 }
