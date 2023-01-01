@@ -27,11 +27,12 @@ char *str_concat(char *s1, char *s2)
 	sum[i] = *(s1 + i);
 
 	}
-	for (; i >= len1 - 1; i++)
+	i = len3;
+	while (i >= len1 - 1)
 	{
-		if (i <= len2)
+		if (i <= len3)
 		sum[i] = *(s2 + i);
-		
+		i++;
 	}
 	return (sum);
 }
