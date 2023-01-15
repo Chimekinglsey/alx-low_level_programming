@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * malloc_checked - checks and allocates memory
  * @b: integer size to allocate
@@ -10,9 +11,7 @@ int *num;
 num = malloc(b * sizeof(unsigned int));
 	if (num == NULL)
 	{
-		return (98);
-		exit(0);
+		exit(98);
 	}
-
-	return (0);
+return (num);
 }
