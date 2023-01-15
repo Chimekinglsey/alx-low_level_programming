@@ -12,14 +12,14 @@ char *s3;
 unsigned int j, i = 0;
 
 s3 = malloc(strlen(s1) + n);
-	if (s3 == NULL)
-		return (NULL);
+		if (s3 == NULL)
+			return (NULL);
 
-	if (s1 == NULL)
-		s1  = " ";
+		if (s1 == NULL)
+			s1  = " ";
 
-	if (s2 == NULL)
-		s2 = " ";
+		if (s2 == NULL)
+			s2 = " ";
 
 		if (n >= (strlen(s2)))
 		{
