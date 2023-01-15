@@ -16,10 +16,10 @@ s3 = malloc(strlen(s1) + n);
 			return (NULL);
 
 		if (s1 == NULL)
-			s1  = " ";
+			s1  = "";
 
 		if (s2 == NULL)
-			s2 = " ";
+			s2 = "";
 
 		if (n >= (strlen(s2)))
 		{
