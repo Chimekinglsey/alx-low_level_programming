@@ -25,17 +25,17 @@ unsigned int j, i = 0;
 		if (n >= (strlen(s2)))
 			n = strlen(s2);
 		
-			while (i < (strlen(s1)))
+		while (i < (strlen(s1)))
 			{
 				s3[i] = s1[i];
 				j = i + 1;
 				i++;
 			}
 
-			while (j >= strlen(s1) && j <= strlen(s3))
+		while (j >= strlen(s1) && j <= strlen(s3))
 			{
 				s3[j] = s2[i];
 				j++;
 			}
-			return (s3);
+		return (s3);
 }
