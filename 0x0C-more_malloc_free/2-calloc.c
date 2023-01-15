@@ -7,7 +7,7 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-unsigned int i, j, *array;
+unsigned int i, *array;
 
 
 if (nmemb == 0 || size == 0)
