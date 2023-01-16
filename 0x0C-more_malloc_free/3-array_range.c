@@ -9,18 +9,17 @@ int *array_range(int min, int max)
 {
 int diff, i,  *ar;
 
+	if (min > max)
+		return (NULL);
+
 diff = max - min;
 ar = malloc((diff + 1) * sizeof(int));
 	if (ar == NULL)
 		return (NULL);
 
-	if (min > max)
-		{
-		return (NULL);
-		}
 	for (i = 0; i <= diff; i++)
-			{
-				ar[i] = min + i;
-			}
+	{
+	ar[i] = min + i;
+	}
 return (ar);
 }
