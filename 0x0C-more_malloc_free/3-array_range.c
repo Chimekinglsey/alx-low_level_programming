@@ -18,12 +18,9 @@ ar = malloc(diff *sizeof(int));
 		{
 		return (NULL);
 		}
-	else
-		{
-			for (i = 0; i <= diff; i++)
+	for (i = 0; i <= diff; i++)
 			{
 				ar[i] = min + i;
 			}
-		}
 return (ar);
 }
