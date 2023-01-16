@@ -32,6 +32,6 @@ if (new_size > old_size)
 		new_mem[i] = ptr1[i];
 	}
 }
-return (ptr);
 free(ptr);
+return (new_mem);
 }
