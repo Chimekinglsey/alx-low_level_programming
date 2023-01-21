@@ -1,0 +1,1 @@
+In this Project, we are looking at typedef and struct in C programming. Structs allows us to for a type of different element members while type def helps us to rename a type into a more convenient name
