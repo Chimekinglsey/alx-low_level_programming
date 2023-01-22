@@ -37,13 +37,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		name_copy[i] = name[i];
 	}
-	name_copy[i] = '\0';
 
 	for (; owner[i] != '\0'; i++)
 	{
 		owner_copy[i] = owner[i];
 	}
-	owner_copy[i] = '\0';
 
 	bingo->name = name_copy;
 	bingo->age = age;
