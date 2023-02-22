@@ -1,0 +1,1 @@
+I am learning how to work with function pointers. It must have same return type and parameter with the function it is pointing to, and the function pointers name must be enclosed in a bracket with asterisk outside to avoid precedence misinterpretation of a function that returns a pointer rather than a pointer to a function.
