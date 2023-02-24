@@ -13,21 +13,18 @@
 
 int create_file(const char *filename, char *text_content)
 {
-int op, wr, len = strlen(text_content);
-char *buffer = malloc (sizeof(char) * len);
+int op, wr, null, len = strlen(text_content);
 
 if (filename == NULL)
 	return (-1);
 
 if (text_content == NULL)
 	{	
-		op = open(filename, O_CREAT | O_RDWR |O_TRUNC, 0600);
-		return (1);
-		EXIT_FAILURE;
+		len = null;
 	}
 
 op = open(filename, O_CREAT | O_RDWR |O_TRUNC, 0600);
-wr = write(op, buffer, len);
+wr = write(op, text_content, len);
 if (op == -1 || wr == -1)
 	return (-1);
 
