@@ -7,7 +7,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned int flag = 0, max = 131072; /* 1000 0000 0000 0000 */
+	unsigned long int flag = 0, max = 131072; /* 1000 0000 0000 0000 */
 
 	if (n == 0)
 	{
