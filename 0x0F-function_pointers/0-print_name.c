@@ -8,22 +8,10 @@
 */
 void print_name(char *name, void (*f)(char *))
 {
-/*
-- we have to get stringlength of name and print it
-- we have to print the content of the function pointer first before the name
-*/
-int i, len_name = 0;
-while(name)
-len_name++;
-
-if (f == NULL)
-_putchar(' ');
-
-if (name == NULL)
-_putchar(' ');
-
-for (i = 0; i < len_name; i++)
+	if (name == NULL)
+		f(" ");
+	else 
 	{
-		_putchar(name[i]);
+		f(name);
 	}
 }
