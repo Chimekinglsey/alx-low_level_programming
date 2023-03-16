@@ -1,0 +1,1 @@
+We are furthering our understanding of linked lists in C-programming. Now is doubly linked list. Major differences is that doubly linked lists contain pointers to next node as well as previous node insuch that transversal is dual. The head contains the address of the next node that is null. Let's face it!
