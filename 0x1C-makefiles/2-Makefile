@@ -1,9 +1,9 @@
-CC = gcc
+CC = cc
 SRC = $(wildcard *.c)
 OBJ = $(wildcard *.o)
 NAME = school
 
 all: $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+	$(CC) -o $(NAME) $(OBJ)
 $(OBJ): $(SRC) m.h
 	$(CC) -c $(SRC)
